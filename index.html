@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Hitung Luas dan Keliling Persegi</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-	<h1>Hitung Luas dan Keliling Persegi</h1>
-	<input type="number" id="sisi" placeholder="Masukkan nilai sisi persegi">
-	<button onclick="hitungLuasDanKeliling()">Hitung</button>
-	<button onclick="resetForm()">Reset</button>
-	<div id="hasil"></div>
-	<script src="js/hitung.js"></script>
+	<div class="header">
+		<h1>Welcome to Natik</h1>
+		<p>Halo Temen-temen, Selamat Datang di Natik</p>
+		<p>Natik ini adalah sebuah web untuk menghitung Luas dan Keliling Bangun Datar</p>
+	</div>
+	<div class="hitung">
+		<input type="number" id="sisi" placeholder="Masukkan Sisi">
+		<button onclick="hitungLuasDanKeliling()">Hitung</button>
+		<div id="hasil"></div>
+		<script src="js/hitung.js"></script>
+	</div>
+	<div class="footer">
+		<button onclick="resetForm()">Reset</button>
+	</div>
+
 </body>
+
 </html>
