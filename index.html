@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator | Page</title>
-    <link rel="stylesheet" href="css/style.css">
+	<title>Hitung Luas dan Keliling Persegi</title>
+	<link rel="stylesheet" type="css/style.css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Kalkulator Luas dan Keliling</h1>
-        <h4>Welcome too Calculator Luas dan Keliling</h4>
-        <p>Web ini digunakan untuk menghitung luas dan keliling bangun ruang dalam rangka menyelesaikan mini project Revou</p>
-    </header>
-
-    <div class="inputsection">
-        <label for="squareside" id="lblsquareside">Hitung Luas Persegi</label>
-        <input type="number" id="squareside">
-    </div>
-    <div class="buttons">
-        <button id="countbutton">Hitung</button>
-        <button id="resetbutton">Reset</button>
-    </div>
+	<h1>Hitung Luas dan Keliling Persegi</h1>
+	<div class="container">
+		<label for="sisi">Masukkan Nilai Sisi:</label>
+		<input type="number" id="sisi" name="sisi">
+		<button onclick="hitung()">Hitung</button>
+	</div>
+	<div class="result" id="result">
+		<p>Keliling: <span id="keliling"></span></p>
+		<p>Luas: <span id="luas"></span></p>
+	</div>
+	<script src="js/hitung.js"></script>
 </body>
 </html>
