@@ -1,8 +1,12 @@
-function hitung() {
+function hitungLuasDanKeliling() {
 	var sisi = document.getElementById("sisi").value;
-	var keliling = 4 * sisi;
 	var luas = sisi * sisi;
+	var keliling = 4 * sisi;
+	var hasil = "Luas persegi: " + luas + " dan Keliling persegi: " + keliling;
+	document.getElementById("hasil").innerHTML = hasil;
+}
 
-	document.getElementById("keliling").innerHTML = keliling;
-	document.getElementById("luas").innerHTML = luas;
+function resetForm() {
+	document.getElementById("sisi").value = "";
+	document.getElementById("hasil").innerHTML = "";
 }
